@@ -17,5 +17,5 @@ for i in range(trials):
 
     visualization_matrix = np.where(isFull, 2, isOpen)
 
-    perc02.draw(visualization_matrix)
+    percolation01.draw(visualization_matrix)
     plt.show()

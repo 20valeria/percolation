@@ -11,7 +11,6 @@ def curve(n, x0, y0, x1, y1, trials=100, gap=0.01, err=0.0025):
     xm = (x0 + x1) / 2.0
     ym = (y0 + y1) / 2.0
     fxm = estimate01.evaluate(n, xm, trials)
-
     if (x1 - x0 < gap) or (abs(ym - fxm) < err):
         plt.plot([x0, x1], [y0, y1], 'k-', lw=1)
         return
